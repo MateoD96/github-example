@@ -1,10 +1,8 @@
 export async function getData(url) {
-  let loading = false;
-  let data = null;
-  let error = null;
+   const result = {data: null, error: null};
    try {     
     const res = await fetch(url);
-   }catch(err) {
+   } catch(err) {
      console.error(err);
    }
 } 
